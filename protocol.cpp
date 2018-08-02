@@ -22,7 +22,7 @@ static const char* ppszTypeName[] =
     "block",
 };
 
-unsigned char pchMessageStart[4] = { 0xf9, 0xbe, 0xb4, 0xd9 };
+unsigned char pchMessageStart[4] = { 0xa3, 0xea, 0xb5, 0x81 };
 
 CMessageHeader::CMessageHeader()
 {
