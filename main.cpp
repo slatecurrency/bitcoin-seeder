@@ -398,7 +398,7 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {"seed.slate.slate.io", ""};
-static const string testnet_seeds[] = {"testnet-seed.slate.slate.io",
+static const string testnet_seeds[] = {"seed.testnet-slate.slate.io",
                                        ""};
 static const string *seeds = mainnet_seeds;
 
