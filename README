@@ -33,7 +33,7 @@ dnsseed.example.com.   86400    IN      NS     vps.example.com.
 
 On the system vps.example.com, you can now run dnsseed:
 
-./dnsseed -h dnsseed.example.com -n vps.example.com
+./dnsseed -h dnsseed.example.com -n vps.example.com -m example@mail.com
 
 If you want the DNS server to report SOA records, please provide an
 e-mail address (with the @ part replaced by .) using -m.
@@ -42,6 +42,10 @@ COMPILING
 ---------
 Compiling will require boost and ssl.  On debian systems, these are provided
 by `libboost-dev` and `libssl-dev` respectively.
+
+If you are using 64-bit operating systems, make sure that initial compiler flags in the Makefile are set to:
+
+CXXFLAGS = -O3 -g0 	(i.e. remove –march=native because this will cause architecture issues)
 
 $ make
 
